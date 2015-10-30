@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+<head>
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/static/css/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/static/css/fonts/fonts.css">
+    <link rel="stylesheet" href="/static/css/codemirror/codemirror.css">
+    <link rel="stylesheet" href="/static/css/highlight.js/github.css">
+    <link rel="stylesheet" href="/static/css/style.css">
+    <link rel="stylesheet" href="/static/css/print.css" media="print">
+    <title>teaching</title>
+    
+    <link rel="stylesheet" href="/_style.css">
+
+    <link rel="stylesheet" href="/static/css/slides.css">
+</head>
+<body>
+    <div id="article"></div>
+    <script>
+    window.Presently = {
+        articleJSON: "{\x22T\x22:\x22article\x22,\x22title\x22:\x22\x22,\x22data\x22:\x22title:  CS Education\x22,\x22children\x22:[{\x22T\x22:\x22section\x22,\x22data\x22:\x22\x22,\x22children\x22:[{\x22T\x22:\x22segment\x22,\x22children\x22:[{\x22T\x22:\x22box\x22,\x22children\x22:[{\x22T\x22:\x22markdown\x22,\x22source\x22:\x22# Undergraduate Courses\x22,\x22uuid\x22:\x2214daf39d-908a-482c-9211-0bd0e549d772\x22}],\x22data\x22:\x22\x22,\x22orient\x22:\x22vertical\x22},{\x22T\x22:\x22box\x22,\x22children\x22:[{\x22T\x22:\x22markdown\x22,\x22source\x22:\x22## _Design and Analysis of Algorithms_ \\n\\n(CSCI 3070U)\\n\\n\x3e This course introduces students to the fundamental principles, design and analysis of algorithms.  We will study a number of algorithm and their analysis.\\n\x3e Students will gain the working knowledge of how to incorporating classical algorithms into their computer programs, and be able to synthesize new algorithmic solutions in problem solving.\\n\\n[Course material](http:\/\/csci3070u.github.io)\x22,\x22uuid\x22:\x2262b0b402-29a9-4812-ad83-dcfb12bdc41b\x22},{\x22T\x22:\x22markdown\x22,\x22source\x22:\x22## _Compiler_\\n\\n(CSCI 4020U)\\n\\n\x3e This course introduces students to concepts such as abstract syntax trees, parsing and code generation of computer programs.  We will cover topics including context free grammars, parsing algorithms, language syntax design and type systems, code general and code optimization.\\n\\nCourse material will be available in January 2016.\x22,\x22uuid\x22:\x2201408a77-a831-4f2b-9d98-a5eb4850d4a4\x22},{\x22T\x22:\x22markdown\x22,\x22source\x22:\x22## _Programming Languages_\\n\\n(CSCI 3055U)\\n\\n\x3e This course broadens one\x27s approciation of programming by examining the strenegths and paradigms of a variety of programming languages.  We will study the design philosophy of several programming languages.  In particular, students will gain _working knowledge_ and approciation of languages such as (1) Scala, (2) Clojure and (3) Haskell.\\n\\nCourse material will be available in January 2016.\x22,\x22uuid\x22:\x225f30e924-b77a-4397-8295-47cfa4335673\x22}],\x22data\x22:\x22\x22,\x22orient\x22:\x22horizontal\x22}],\x22data\x22:\x22style:\\n  fontSize: 100%\x22,\x22orient\x22:\x22vertical\x22,\x22layout\x22:\x22slide\x22}]}]}",
+        coverJSON: "{\x22T\x22:\x22article\x22,\x22title\x22:\x22\x22,\x22data\x22:\x22title: Cover\x22,\x22children\x22:[{\x22T\x22:\x22section\x22,\x22data\x22:\x22\x22,\x22children\x22:[{\x22T\x22:\x22segment\x22,\x22children\x22:[{\x22T\x22:\x22box\x22,\x22children\x22:[{\x22T\x22:\x22markdown\x22,\x22source\x22:\x22_Database \x26 Information Research Group_\x22,\x22uuid\x22:\x22160c90ce-a362-4f85-aabb-61dd4c10f090\x22}],\x22data\x22:\x22\x22,\x22orient\x22:\x22vertical\x22}],\x22data\x22:\x22\x22,\x22orient\x22:\x22vertical\x22,\x22layout\x22:\x22slide\x22}]},{\x22T\x22:\x22section\x22,\x22data\x22:\x22\x22,\x22children\x22:[{\x22T\x22:\x22segment\x22,\x22children\x22:[{\x22T\x22:\x22box\x22,\x22children\x22:[{\x22T\x22:\x22markdown\x22,\x22source\x22:\x22_Ken Pu_, 2015 \x26copy;\x22,\x22uuid\x22:\x225bb43c12-27f5-4e0a-935a-87d68c27c2fe\x22}],\x22data\x22:\x22\x22,\x22orient\x22:\x22vertical\x22}],\x22data\x22:\x22\x22,\x22orient\x22:\x22vertical\x22,\x22layout\x22:\x22slide\x22}]}]}",
+    };
+    </script>
+    
+    <script src="/static/libs/jquery.min.js"></script>
+    <script src="/static/libs/jquery-paste-image.js"></script>
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        extensions: ["tex2jax.js"],
+        jax: ["input/TeX", "output/HTML-CSS"],
+        elements: [],
+        skipStartupTypeset: true,
+        showMathMenu: false,
+        zoom: "None",
+        tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+          displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+          processEscapes: true,
+          skipTags: ["script", "noscript", "style", "textarea", "nomath"],
+          ignoreClass: "nomath|nomathjax|tex2jax_ignore",
+        },
+        "HTML-CSS": { availableFonts: ["TeX"] }
+      });
+    </script>
+    <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/2.2-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"> </script>
+
+    <script src="/static/reader.js"></script>
+</body>
+</html>

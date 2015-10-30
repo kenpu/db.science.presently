@@ -1,0 +1,62 @@
+/* Hide reading specific elements */
+.prly-article.prly-on .prly-article-title {
+    display: none;
+}
+
+.prly-article.prly-on .prly-section,
+.prly-article.prly-on .prly-segment {
+    border: none !important;
+}
+
+/* presentation animation */
+.prly-article.prly-on {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.prly-on .prly-step.before-focus {
+    opacity: 0.8;
+}
+.prly-on .prly-step.in-focus {
+    opacity: 1.0;
+}
+.prly-on .prly-step.after-focus {
+    opacity: 0.5;
+    color: transparent;
+    text-shadow: 0 0 5px RGBA(0,0,0,0.5);
+}
+.prly-on .prly-box.in-focus {
+    box-shadow: 0 0 2px 2px RGBA(0,0,0,0.3);
+}
+
+/* == code walk == */
+.prly-on .prly-codewalk-section {
+    border-left: 5px solid transparent; }
+
+.prly-on .prly-codewalk-section.in-focus {
+    border-left: 5px solid blue; }
+
+.prly-on .prly-codewalk-section.out-focus {
+    border-left: 5px solid #aaa;
+}
+
+/* Presently Navbar */
+.prly-navbar {
+    opacity: 0;
+    transitionProperty: 'opacity';
+    transitionDuration: 0.4s;
+    transitionTimingFunction: "ease-out"; }
+
+.prly-navbar:hover { opacity: 1; }
+
+.prly-indicators {
+    opacity: 0; }
+
+.prly-article.prly-on .prly-indicators {
+    opacity: 0.6; }
